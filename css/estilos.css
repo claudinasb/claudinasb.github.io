@@ -1057,3 +1057,33 @@ __
         height: 40px; /* Mantiene la proporción */
     }
 }
+
+    /* Estilo para el título del mapa */
+.footer__map-title {
+    font-size: 2rem; /* Tamaño de fuente del título */
+    font-weight: bold; /* Negrita */
+    margin-top: 20px; /* Ajusta el margen superior del título */
+    margin-bottom: 45px;
+    color: #001a49; 
+}
+
+/* Estilo para el iframe del mapa */
+.footer__map iframe {
+    width: 100%; /* Ancho completo */
+    height: 450px; /* Altura aumentada del mapa */
+    border: 0; /* Sin borde */
+}
+
+/* Estilo para la línea de separación */
+.footer__separator {
+    border-top: 1px solid #fff; /* Línea blanca */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Estilos específicos para pantallas menores de 600px */
+@media (max-width: 600px) {
+    .footer__map-title {
+        margin-top: 10px; /* Reduce el margen superior en pantallas pequeñas */
+        font-size: 1.5rem; /* Ajusta el tamaño de fuente si es necesario */
+    }
+}
