@@ -1070,7 +1070,7 @@ __
 /* Estilo para el iframe del mapa */
 .footer__map iframe {
     width: 100%; /* Ancho completo */
-    height: 450px; /* Altura aumentada del mapa */
+    height: 500px; /* Altura aumentada del mapa */
     border: 0; /* Sin borde */
 }
 
@@ -1083,7 +1083,7 @@ __
 /* Estilos específicos para pantallas menores de 600px */
 @media (max-width: 600px) {
     .footer__map-title {
-        margin-top: 10px; /* Reduce el margen superior en pantallas pequeñas */
+        margin-top: -200px; /* Reduce el margen superior en pantallas pequeñas */
         font-size: 1.5rem; /* Ajusta el tamaño de fuente si es necesario */
     }
 }
