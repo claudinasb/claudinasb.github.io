@@ -377,6 +377,13 @@ body {
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
 /* Questions */
 .questions {
     text-align: center;
@@ -608,24 +615,46 @@ __
     font-size: 1rem;
 }
 
-/* Ajustes para cambiar colores usando variables */
-
 
 /* FIN Sección de Contacto */
 
 
 
+
+/* Sección de imagen de ancho completo */
 .full-width-image {
-    margin-top: -150px; /* Ajusta el valor para controlar qué tan arriba quieres moverlo */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.full-width-image__img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio inferior */
+}
+
+/* Opcional: Estilo para el título en la sección de valores */
+.company-values {
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Espaciado vertical */
 }
 
 
 
+/* Estilo para la sección de Protección y Tratamiento de Datos Personales */
+.data-protection {
+    background-color: #f9f9f9; /* Fondo claro */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Espaciado superior para separación */
+}
 
-
-
-
-
+.data-protection__text {
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+    color: #333; /* Color del texto */
+}
 
 
 
