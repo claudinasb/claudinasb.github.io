@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistemas Avanzados PZA</title>
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
-
+    
+    <!-- Theme color for mobile browsers -->
     <meta name="theme-color" content="#2091F9">
-
-<!-- Primary Meta Tags -->
-<meta name="title" content="Sistemas Avanzados PZA" />
-<meta name="description" content="Internet de alta velocidad por fibra óptica en Paz de Ariporo, Casanare. Instalación de cámaras de seguridad, soporte técnico especializado y servicio de antenas para mantenerte conectado y seguro. ¡Calidad y tecnología a tu alcance!" />
-
-
-
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Sistemas Avanzados PZA" />
+    <meta name="description" content="Internet de alta velocidad por fibra óptica en Paz de Ariporo, Casanare. Instalación de cámaras de seguridad, soporte técnico especializado y servicio de antenas para mantenerte conectado y seguro. ¡Calidad y tecnología a tu alcance!" />
 </head>
+
+<body>
+
+    <!-- Header with Navigation -->
     <header class="hero">
-        <!-- Sección del menú -->
-        <nav class="nav container">
+        <nav class="nav container" aria-label="Main navigation">
             <div class="nav__logo">
                 <img src="./images/logosistemas.png" alt="Logo de Sistemas Avanzados" class="logo">
             </div>
-            <ul class="nav__link nav__link--menu nav__test">
+            <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
                     <a href="https://www.speedtest.net" class="nav__links active" target="_blank" rel="noopener noreferrer">
                         <img src="/images/test.png" alt="Test de velocidad" class="test">
@@ -32,239 +38,164 @@
                 </li>
             </ul> 
         </nav>
-
-        
     </header>
 
+    <!-- Main Content -->
+    <main>
+        <!-- Services Section -->
+        <section class="container about">
+            <h2 class="subtitle">Nuestros servicios</h2>
+            <p class="about__paragraph">En Sistemas Avanzados PZA, cada instalación cuenta con garantía y soporte técnico especializado. Nuestro equipo de profesionales está comprometido en ofrecerte soluciones de calidad en cada uno de nuestros servicios los 7 días de la semana.</p>
+            
+            <div class="about__main">
+                <!-- Service: High-Speed Internet -->
+                <article class="about__icons">
+                    <img src="./images/internet-speed.jpg" class="about__icon" alt="Icono Internet de Alta Velocidad">
+                    <h3 class="about__title">Internet de Alta Velocidad</h3>
+                    <p class="about__paragraph">Con nuestra tecnología de fibra óptica, disfruta de conexiones ultrarrápidas, ideales para streaming, trabajo remoto y entretenimiento sin interrupciones.</p>
+                </article>
 
-        
+                <!-- Service: Security Cameras Installation -->
+                <article class="about__icons">
+                    <img src="./images/security-camera.jpg" class="about__icon" alt="Icono Instalación de Cámaras de Seguridad">
+                    <h3 class="about__title">Instalación de Cámaras de Seguridad</h3>
+                    <p class="about__paragraph">Protege tu hogar o negocio con cámaras de alta definición y acceso remoto, brindando seguridad en tiempo real y tranquilidad las 24 horas.</p>
+                </article>
 
-        <main>
-            <section class="container about">
-                <h2 class="subtitle">Nuestros servicios</h2>
-                <p class="about__paragraph">En Sistemas Avanzados PZA, cada instalación cuenta con garantía y soporte técnico especializado. Nuestro equipo de profesionales está comprometido en ofrecerte soluciones de calidad en cada uno de nuestros servicios los 7 dias de la semana.</p>
-                <div class="about__main">
-                    <article class="about__icons">
-                        <img src="./images/internet-speed.jpg" class="about__icon" alt="Icono Internet de Alta Velocidad"> <!-- Cambiado a imagen -->
-                        <h3 class="about__title">Internet de Alta Velocidad</h3>
-                        <p class="about__paragraph">Con nuestra tecnología de fibra óptica, disfruta de conexiones ultrarrápidas, ideales para streaming, trabajo remoto y entretenimiento sin interrupciones.</p>
-                    </article>
-        
-                    <article class="about__icons">
-                        <img src="./images/security-camera.jpg" class="about__icon" alt="Icono Instalación de Cámaras de Seguridad"> <!-- Cambiado a imagen -->
-                        <h3 class="about__title">Instalación de Cámaras de Seguridad</h3>
-                        <p class="about__paragraph">Protege tu hogar o negocio con cámaras de alta definición y acceso remoto, brindando seguridad en tiempo real y tranquilidad las 24 horas.</p>
-                    </article>
-        
-                    <article class="about__icons">
-                        <img src="./images/antenna.jpg" class="about__icon" alt="Icono Antenas y Cobertura Extendida"> <!-- Cambiado a imagen -->
-                        <h3 class="about__title">Antenas y Cobertura Extendida</h3>
-                        <p class="about__paragraph">Instalación de antenas para ampliar la cobertura de internet en áreas rurales o de difícil acceso, asegurando una señal confiable.</p>
-                    </article>
-                </div>
-            </section>
-        </main>
-        
-
-        <section class="contact">
-            <div class="container">
-                <h2 class="subtitle">Solicita un Servicio</h2>
-                <iframe 
-                    aria-label="Deja tus datos para solicitar un servicio y te comunicaremos en el menor tiempo posible."
-                    frameborder="0" 
-                    allow="camera;" 
-                    style="height:500px;width:99%;border:none;" 
-                    src="https://forms.zohopublic.com/gerenciasistemasav1/form/Solicitaunservicio/formperma/tzFS1fhpXwL7QkzCVhhk0cAPLYzJ7Cp602oHRTIlzsU?zf_enablecamera=true">
-                </iframe>
+                <!-- Service: Antennas and Extended Coverage -->
+                <article class="about__icons">
+                    <img src="./images/antenna.jpg" class="about__icon" alt="Icono Antenas y Cobertura Extendida">
+                    <h3 class="about__title">Antenas y Cobertura Extendida</h3>
+                    <p class="about__paragraph">Instalación de antenas para ampliar la cobertura de internet en áreas rurales o de difícil acceso, asegurando una señal confiable.</p>
+                </article>
             </div>
         </section>
+    </main>
+
+    <!-- Contact Section with Embedded Form -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="subtitle">Solicita un Servicio</h2>
+            <iframe 
+                aria-label="Formulario para solicitar un servicio"
+                frameborder="0" 
+                allow="camera;" 
+                style="height:500px;width:99%;border:none;" 
+                src="https://forms.zohopublic.com/gerenciasistemasav1/form/Solicitaunservicio/formperma/tzFS1fhpXwL7QkzCVhhk0cAPLYzJ7Cp602oHRTIlzsU?zf_enablecamera=true">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="price container">
+        <h2 class="subtitle">Obtén el plan perfecto para ti</h2>
+        <p class="hero__paragraph">Ofrecemos soluciones de alta tecnología en fibra óptica, junto con soporte especializado y garantía de calidad para tu tranquilidad y comodidad.</p>
         
-        
-        
-        <section class="price container">
-            <h2 class="subtitle">Obten el plan perfecto para ti</h2>
-            <p class="hero__paragraph">Ofrecemos soluciones de alta tecnología en fibra óptica, junto con soporte especializado y garantía de calidad para tu tranquilidad y comodidad. Con nosotros, tienes el respaldo que necesitas para mantenerte conectado y seguro en todo momento.</p>
-            <div class="price__table">
-                <div class="price__element">
-                    <p class="price__name"><strong>Plan Básico</strong></p> <!-- Colocado en negrita -->
-                    <h3 class="price__price">$55.000/mes</h3>
-                    <div class="price__items">
-                        <p class="price__features"><strong>35 MegaS</strong></p> <!-- Colocado en negrita -->
-                        <p class="price__features">Instalación: $80.000</p>
-                        <p class="price__features small-text">Ideal para el hogar, proporciona una conexión estable para navegación y actividades diarias.</p> <!-- Pequeña más la letra -->
-                    </div>
-                    <a href="https://wa.link/yuy7w2" class="price__cta" target="_blank" rel="noopener noreferrer">Empieza ahora</a>
+        <div class="price__table">
+
+            <!-- Basic Plan -->
+            <div class="price__element">
+                <p class="price__name"><strong>Plan Básico</strong></p>
+                <h3 class="price__price">$55.000/mes</h3>
+                <div class="price__items">
+                    <p class="price__features"><strong>35 MegaS</strong></p>
+                    <p class="price__features">Instalación: $80.000</p>
+                    <p class="price__features small-text">Ideal para el hogar, proporciona una conexión estable para navegación y actividades diarias.</p>
                 </div>
-        
-                <div class="price__element price__element--best"> 
-                    <p class="price__name"><strong>Plan Avanzado</strong></p> <!-- Colocado en negrita -->
-                    <h3 class="price__price">$80.000/mes</h3>
-                    <div class="price__items">
-                        <p class="price__features"><strong>60 MegaS</strong></p> <!-- Colocado en negrita -->
-                        <p class="price__features">Instalación: $80.000</p>
-                        <p class="price__features small-text">Ideal para hogares con múltiples dispositivos o pequeñas empresas, garantiza una conexión robusta y eficiente para el trabajo y la vida diaria.</p>
-                    </div>
-                    <a href="https://wa.link/3kn5mq" class="price__cta">Empieza ahora</a>
-                </div>
-        
-                <div class="price__element">  
-                    <p class="price__name"><strong>Plan Premium</strong></p> <!-- Colocado en negrita -->
-                    <h3 class="price__price">$110.000/mes</h3>
-                    <div class="price__items">
-                        <p class="price__features"><strong>90 MegaS</strong></p> <!-- Colocado en negrita -->
-                        <p class="price__features">Instalación: $80.000</p>
-                        <p class="price__features small-text">Diseñado para empresas y negocios que requieren alta velocidad y estabilidad para tareas intensivas y operaciones diarias.</p>
-                    </div>
-                    <a href="https://wa.link/orb1ld" class="price__cta">Empieza ahora</a>
-                </div>
+                <a href="https://wa.link/yuy7w2" class="price__cta" target="_blank" rel="noopener noreferrer">Empieza ahora</a>
             </div>
-        </section>
-        
-        
-        
-        
 
-        <section class="testimony">
-            <h2 class="subtitle testimony__title">Conoce nuestro equipo</h2>
-            <div class="testimony__container container">
-                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
-                
-                <section class="testimony__body testimony__body--show" data-id="1">
-                    <div class="testimony__text">
-                        <h2 class="subtitle">Técnico de Redes,  <span class="testimony__course">Didier Suarez</span></h2>
-                        <p class="testimony__review">Didier se especializa en la instalación de fibra óptica, antenas y camaras de seguridad, brindando soporte técnico y soluciones efectivas para la integración de sistemas de seguridad.</p> 
-                    </div> 
-                    <figure class="testimony__picture">
-                        <img src="./images/didier.jpg" class="testimony__img">
-                    </figure>
-                </section>
-        
-                <section class="testimony__body" data-id="2">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Ing. de Sistemas,  <span class="testimony__course">Claudina Salas</span></h2>
-                        <p class="testimony__review">Claudina es responsable de soporte y atención al cliente, además de diseñar soluciones tecnológicas y realizar diagnósticos para optimizar nuestros servicios.</p> 
-                    </div>
-                    <figure class="testimony__picture">
-                        <img src="./images/claudina.jpg" class="testimony__img">
-                    </figure>
-                </section>
-        
-                <section class="testimony__body" data-id="3">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Contador Público,  <span class="testimony__course">Dumar Otalvaro</span></h2>
-                        <p class="testimony__review">Dumar maneja toda la atención al cliente en asuntos financieros, asegurando la transparencia económica y el análisis necesario para respaldar nuestras operaciones.</p> 
-                    </div>
-                    <figure class="testimony__picture">
-                        <img src="./images/dumar.jpg" class="testimony__img">
-                    </figure>
-                </section>
-        
-                <section class="testimony__body" data-id="4">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Técnico de Redes,  <span class="testimony__course">Jonathan Zuñiga</span></h2>
-                        <p class="testimony__review">Jonathan se encarga de la instalación de fibra óptica y cámaras de seguridad, además de ofrecer soporte técnico para garantizar el correcto funcionamiento de nuestros sistemas.</p>
-                    </div>
-                    <figure class="testimony__picture">
-                        <img src="./images/jonathan.jpg" class="testimony__img">
-                    </figure>  
-                </section>
-        
-                <section class="testimony__body" data-id="5">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Técnico de Redes,  <span class="testimony__course">Yurian Alexander</span></h2>
-                        <p class="testimony__review">Yurian se especializa en soporte técnico y reparaciones, asegurando que nuestros clientes siempre tengan la asistencia necesaria para mantener sus servicios activos.</p>
-                    </div>
-                    <figure class="testimony__picture">
-                        <img src="./images/yurian.jpg" class="testimony__img">
-                    </figure>
-                </section>
-        
-                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+            <!-- Advanced Plan -->
+            <div class="price__element price__element--best">
+                <p class="price__name"><strong>Plan Avanzado</strong></p>
+                <h3 class="price__price">$80.000/mes</h3>
+                <div class="price__items">
+                    <p class="price__features"><strong>60 MegaS</strong></p>
+                    <p class="price__features">Instalación: $80.000</p>
+                    <p class="price__features small-text">Ideal para hogares con múltiples dispositivos o pequeñas empresas.</p>
+                </div>
+                <a href="https://wa.link/3kn5mq" class="price__cta">Empieza ahora</a>
             </div>
-        </section>
-        
-        
 
+            <!-- Premium Plan -->
+            <div class="price__element">
+                <p class="price__name"><strong>Plan Premium</strong></p>
+                <h3 class="price__price">$110.000/mes</h3>
+                <div class="price__items">
+                    <p class="price__features"><strong>90 MegaS</strong></p>
+                    <p class="price__features">Instalación: $80.000</p>
+                    <p class="price__features small-text">Diseñado para empresas y negocios que requieren alta velocidad y estabilidad.</p>
+                </div>
+                <a href="https://wa.link/orb1ld" class="price__cta">Empieza ahora</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Questions Section -->
+    <section class="questions container">
+        <h2 class="subtitle">Preguntas frecuentes</h2>
+        <p class="questions__paragraph">Aquí encontrarás respuestas a las preguntas más comunes sobre nuestros servicios y cómo obtener soporte técnico.</p>
+        
+        <section class="questions__container">
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Qué documentos necesito para obtener el servicio?</h3>
+                    <p class="questions__show">
+                        Para personas naturales:
+                        <br>- Copia del documento de identidad
+                        <br>- Copia de recibo de la energía
+                        <br><br>
+                        Para empresas:
+                        <br>- Copia del documento del representante legal
+                        <br>- Copia de recibo de la energía
+                        <br>- Copia del RUT
+                    </p>
+                </div>
+            </article>
 
         
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Cuáles son los horarios de atención?
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+                    <p class="questions__show">
+                        Nuestros horarios de atención son:
+                        <br>
+                        Lunes a viernes: 7:00 AM - 12:00 PM y 2:00 PM - 6:00 PM
+                        <br>
+                        Sábados: 9:00 AM - 12:00 PM y 2:00 PM - 5:00 PM
+                    </p>
+                </div>
+            </article>               
         
-  
-        <section class="questions container">
-            <h2 class="subtitle">Preguntas frecuentes</h2>
-            <p class="questions__paragraph">Aquí encontrarás respuestas a las preguntas más comunes sobre nuestros servicios, horarios y cómo obtener soporte técnico.</p>
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Cómo solicito soporte técnico?
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+                    <p class="questions__show">
+                        Puedes solicitar soporte técnico a través de nuestros canales de atención: WhatsApp, nuestra página web o por llamada telefónica.
+                    </p>
+                </div>
+            </article>             
         
-            <section class="questions__container">
-        
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Qué documentos necesito para obtener el servicio?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-                        <p class="questions__show">
-                            Para personas naturales:
-                            <br>
-                            - Copia del documento de identidad
-                            <br>
-                            - Copia de recibo de la energía
-                            <br>
-                            <br>
-                            Para empresas:
-                            <br>
-                            - Copia del documento del representante legal
-                            <br>
-                            - Copia de recibo de la energía
-                            <br>
-                            - Copia del RUT
-                            <br>
-                        </p>
-                    </div>
-                </article>
-        
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Cuáles son los horarios de atención?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-                        <p class="questions__show">
-                            Nuestros horarios de atención son:
-                            <br>
-                            Lunes a viernes: 7:00 AM - 12:00 PM y 2:00 PM - 6:00 PM
-                            <br>
-                            Sábados: 9:00 AM - 12:00 PM y 2:00 PM - 5:00 PM
-                        </p>
-                    </div>
-                </article>
-        
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Cómo solicito soporte técnico?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-                        <p class="questions__show">
-                            Puedes solicitar soporte técnico a través de nuestros canales de atención: WhatsApp, nuestra página web o por llamada telefónica.
-                        </p>
-                    </div>
-                </article>
-        
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Puedo hacer traslados de servicio?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-                        <p class="questions__show">
-                            Sí, puedes realizar traslados de servicio con un costo de $30,000, siempre y cuando tengamos cobertura en la nueva ubicación.
-                        </p>
-                    </div>
-                </article>
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Puedo hacer traslados de servicio?
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+                    <p class="questions__show">
+                        Sí, puedes realizar traslados de servicio con un costo de $30,000, siempre y cuando tengamos cobertura en la nueva ubicación.
+                    </p>
+                </div>
+            </article>           
         
             </section>
         </section>
@@ -279,54 +210,51 @@
     </section>
     
 
-<!-- Sección de Contacto -->
-<section class="contact-section">
-    <h2 class="contact-section__title">Contáctanos</h2>
-    <div class="contact-section__info">
-        <div class="contact-section__numbers">
-            <a href="https://wa.me/573124423164" target="_blank" rel="noopener noreferrer">312 442 3164</a>
-            <span>|</span>
-            <a href="https://wa.me/573228545171" target="_blank" rel="noopener noreferrer">322 854 5171</a>
+    <!-- Sección de Contacto -->
+    <section class="contact-section">
+        <h2 class="contact-section__title">Contáctanos</h2>
+        <div class="contact-section__info">
+            <div class="contact-section__numbers">
+                <a href="https://wa.me/573124423164" target="_blank" rel="noopener noreferrer">312 442 3164</a>
+                <span>|</span>
+                <a href="https://wa.me/573228545171" target="_blank" rel="noopener noreferrer">322 854 5171</a>
+            </div>
+            <div class="contact-section__icons">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="contact-section__icon">
+                    <img src="./images/facebook.svg" alt="Facebook" class="contact-section__img">
+                </a>
+                <a href="https://wa.me/573124423164" target="_blank" rel="noopener noreferrer" class="contact-section__icon">
+                    <img src="./images/whatsapp.svg" alt="WhatsApp" class="contact-section__img">
+                </a>
+            </div>
+            <p class="contact-section__email">
+                <a href="mailto:gerencia@sistemasavanzadospza.com" target="_blank" rel="noopener noreferrer">gerencia@sistemasavanzadospza.com</a>
+            </p>        
         </div>
-        <div class="contact-section__icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="contact-section__icon">
-                <img src="./images/facebook.svg" alt="Facebook" class="contact-section__img">
-            </a>
-            <a href="https://wa.me/573124423164" target="_blank" rel="noopener noreferrer" class="contact-section__icon">
-                <img src="./images/whatsapp.svg" alt="WhatsApp" class="contact-section__img">
-            </a>
-        </div>
-        <p class="contact-section__email">
-            <a href="mailto:gerencia@sistemasavanzadospza.com" target="_blank" rel="noopener noreferrer">gerencia@sistemasavanzadospza.com</a>
-        </p>        
-    </div>
-</section>
+    </section>
 
     
 
 
-    <footer class="footer">
-        <section class="footer__container container">
-        </section>
-    
-        <section class="footer__map">
-            <h2 class="footer__map-title">Ubicanos</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.749260988321!2d-71.89468322552271!3d5.890809030193255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6c09d89f626a11%3A0x6fbd932202d0bc52!2sSISTEMAS%20AVANZADOS%20PZA!5e0!3m2!1ses!2sco!4v1730077487317!5m2!1ses!2sco" 
-                width="100%" 
-                height="300" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
+        <footer class="footer">
+            <section class="footer__container container">
+            </section>
+        
+            <section class="footer__map">
+                <h2 class="footer__map-title">Ubicanos</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.749260988321!2d-71.89468322552271!3d5.890809030193255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6c09d89f626a11%3A0x6fbd932202d0bc52!2sSISTEMAS%20AVANZADOS%20PZA!5e0!3m2!1ses!2sco!4v1730077487317!5m2!1ses!2sco" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>       
 
 
-
-
-
-        <!-- ¿Quiénes Somos y Qué Representamos? -->
+    <!-- ¿Quiénes Somos y Qué Representamos? -->
     <section class="container company-values">
         <h2 class="subtitle">¿Quiénes Somos y Qué Representamos?</h2>
         <div class="full-width-image">
@@ -335,8 +263,7 @@
     </section>
 
 
-
-        <!-- Sección de PQRS (Peticiones, Quejas, Reclamos y Sugerencias) -->
+    <!-- Sección de PQRS (Peticiones, Quejas, Reclamos y Sugerencias) -->
     <section class="container pqrs">
         <iframe 
             aria-label="PQRS (Peticiones, Quejas, Reclamos y Sugerencias)" 
@@ -348,20 +275,15 @@
     </section>
 
 
-
-
     <!-- Sección de Protección y Tratamiento de Datos Personales -->
-    <section class="container data-protection">
-        <h2 class="subtitle">Protección y Tratamiento de Datos Personales</h2>
-        <p class="data-protection__text">
-            Sistemas Avanzados PZA S.A.S. se compromete a proteger y tratar de manera confidencial la información personal proporcionada por los usuarios. La información recopilada será utilizada únicamente para la gestión de servicios, consultas, reportes y atención al cliente, conforme a la legislación vigente en materia de protección de datos. Los datos personales serán manejados con estricta confidencialidad y podrán ser utilizados para mejorar el servicio, realizar análisis internos, y en cumplimiento de requerimientos legales. Para más información, puedes consultar nuestra Política de Tratamiento de Datos Personales.        </p>
-    </section>
-
-
-
+        <section class="container data-protection">
+            <h2 class="subtitle">Protección y Tratamiento de Datos Personales</h2>
+            <p class="data-protection__text">
+                Sistemas Avanzados PZA S.A.S. se compromete a proteger y tratar de manera confidencial la información personal proporcionada por los usuarios. La información recopilada será utilizada únicamente para la gestión de servicios, consultas, reportes y atención al cliente, conforme a la legislación vigente en materia de protección de datos. Los datos personales serán manejados con estricta confidencialidad y podrán ser utilizados para mejorar el servicio, realizar análisis internos, y en cumplimiento de requerimientos legales. Para más información, puedes consultar nuestra Política de Tratamiento de Datos Personales.        </p>
+        </section>
 
     
-        <!-- Línea de separación -->
+    <!-- Línea de separación -->
         <div class="footer__separator"></div>
     
         <section class="footer__copy"> 
@@ -373,7 +295,6 @@
     
     
     
-
 
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>

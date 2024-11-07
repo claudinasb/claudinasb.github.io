@@ -107,6 +107,8 @@ body {
     align-self: center;
 }
 
+
+
 /* Estilos para Test de Velocidad */
 .nav__test {
     display: flex;
@@ -122,7 +124,6 @@ body {
     margin-top: 32px; /* Ajuste para mover hacia abajo */
     align-self: center; /* Centrado vertical */
 }
-
 
 
 
@@ -173,7 +174,6 @@ body {
 
 
 
-
 /* FORMULARIO */
 
 .contact {
@@ -204,16 +204,6 @@ body {
 
 
 /* FIN FORMULARIO */
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -310,10 +300,12 @@ body {
     box-shadow: 0 0 1px rgba(1, 6, 45, 0.1);
 }
 
+/* FIN PRICE */
 
 
 
 /* Testimony */
+
 .testimony {
     background-color: #e5e5f7;
     text-align: center;
@@ -376,9 +368,6 @@ body {
     width: 90%;
     cursor: pointer;
 }
-
-
-
 
 
 
@@ -463,6 +452,7 @@ __
 
 
 /* Sección de imagen de ancho completo */
+
 .full-width-image {
     width: 100%;
     margin: 0;
@@ -474,11 +464,6 @@ __
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Elimina el espacio inferior */
 }
-
-
-
-
-
 
 
 
@@ -659,16 +644,8 @@ __
 
 
 
-
-
-
-
-
-
-
-/* Media Queries */
+/* Media Queries 800px*/
 @media (max-width: 800px) {
-    
 
     .container {
         width: 90%;
@@ -677,24 +654,23 @@ __
         overflow: hidden;
         padding: var(--padding-container);
     }
-    
+
     .hero {
-        position: relative; /* Mantiene la posición relativa */
-        width: 100%; /* Ancho completo */
-        height: 100%; /* Altura completa del contenedor */
-        min-height: 80vh; /* Altura mínima de 80vh */
-        display: flex; /* Usar flexbox para la disposición */
-        flex-direction: column; /* Direccionar el contenido en columnas */
-        color: #fff; /* Color del texto */
-        overflow: hidden; /* Para que no se desborde */
-        background-size: cover; /* Mantiene la proporción y cubre el contenedor */
-        background-position: center; /* Centra la imagen */
-        background-repeat: no-repeat; /* Evita la repetición de la imagen */
-        animation: fade 20s infinite; /* Animación para el fondo */
+        position: relative;
+        width: 100%;
+        height: 100%;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: fade 20s infinite;
     }
-    
-    /* CARRUSEL DE IMAGENES INICIO */
-    /* Definimos las imágenes en una animación */
+
+    /* CARRUSEL DE IMÁGENES */
     @keyframes fade {
         0% {
             background-image: linear-gradient(180deg, var(--color-bg-hero) 0%, var(--color-bg-hero)), url("../images/img1.jpg");
@@ -715,168 +691,133 @@ __
             background-image: linear-gradient(180deg, var(--color-bg-hero) 0%, var(--color-bg-hero)), url("../images/img1.jpg");
         }
     }
-    
-    /* Media Query para pantallas de celular */
-    @media (max-width: 800px) {
-        .hero {
-            background-size: 50%; /* Cambia a '50%' para que las imágenes se vean más pequeñas */
-            background-repeat: no-repeat; /* Mantiene la no repetición */
-            min-height: 50vh; /* Ajusta la altura mínima a 50vh */
-        }
+
+    /* Ajustes para hero en pantallas pequeñas */
+    .hero {
+        background-size: contain;
+        background-position: center center;
+        min-height: 50vh;
     }
-    
-    
 
+    /* Estilos generales de precios */
+    .price {
+        text-align: center;
+    }
 
+    .price__table {
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5em;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-    /* Estilos generales */
-.price {
-    text-align: center;
-}
-
-.price__table {
-    padding-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5em;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.price__element {
-    position: relative; /* Necesario para posicionar el pseudo-elemento */
-    text-align: center;
-    border-radius: 10px;
-    width: 100%; /* Cambiado a 100% para pantallas más pequeñas */
-    max-width: 330px; /* Limitar el ancho máximo */
-    padding: 40px;
-    --color-plan: #ffffff;
-    --color-price: #ffffff;
-    --bg-cta: #fff;
-    --color-cta: #546bd4;
-    --color-items: #ffffff;
-    overflow: hidden; /* Para ocultar el contenido que sobresalga */
-}
-
-.price__element::before {
-    content: ""; /* Pseudo-elemento vacío */
-    position: absolute; /* Posicionarlo sobre el contenedor */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('ruta/a/tu/imagen1.jpg'); /* Imagen de fondo para el plan básico */
-    background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
-    background-position: center; /* Centrar la imagen */
-    opacity: 0.5; /* Ajusta la opacidad de la imagen */
-    z-index: 1; /* Asegura que la imagen esté detrás del contenido */
-}
-
-.price__element > * {
-    position: relative; /* Asegura que el contenido esté encima de la imagen */
-    z-index: 2; /* Asegura que el contenido esté encima del pseudo-elemento */
-}
-
-.price__element--best {
-    width: 100%; /* Cambiado a 100% para pantallas más pequeñas */
-    max-width: 370px; /* Limitar el ancho máximo */
-    padding: 60px 40px;
-    background-color: var(--accent-color);
-    --color-plan: rgba(255, 255, 255, 0.75);
-    --color-price: #fff;
-    --bg-cta: #fff; 
-    --color-cta: #FFF;
-    --color-items: #fff;
-}
-
-.price__element--best::before {
-    background-image: url('ruta/a/tu/imagen2.jpg'); /* Imagen de fondo para el plan avanzado */
-}
-
-.price__element:nth-child(3)::before {
-    background-image: url('ruta/a/tu/imagen3.jpg'); /* Imagen de fondo para el plan premium */
-}
-
-
-
-/* Media Query para pantallas de 800px */
-@media (max-width: 800px) {
     .price__element {
-        padding: 20px; /* Reducir padding para pantallas pequeñas */
+        position: relative;
+        text-align: center;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 330px;
+        padding: 40px;
+        --color-plan: #ffffff;
+        --color-price: #ffffff;
+        --bg-cta: #fff;
+        --color-cta: #546bd4;
+        --color-items: #ffffff;
+        overflow: hidden;
+    }
+
+    .price__element::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('ruta/a/tu/imagen1.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+        z-index: 1;
+    }
+
+    .price__element > * {
+        position: relative;
+        z-index: 2;
     }
 
     .price__element--best {
-        padding: 30px; /* Reducir padding para el plan destacado */
+        width: 100%;
+        max-width: 370px;
+        padding: 60px 40px;
+        background-color: var(--accent-color);
+        --color-plan: rgba(255, 255, 255, 0.75);
+        --color-price: #fff;
+        --bg-cta: #fff;
+        --color-cta: #FFF;
+        --color-items: #fff;
+    }
+
+    .price__element--best::before {
+        background-image: url('ruta/a/tu/imagen2.jpg');
+    }
+
+    .price__element:nth-child(3)::before {
+        background-image: url('ruta/a/tu/imagen3.jpg');
+    }
+
+    /* Ajustes en pantallas pequeñas para precios */
+    .price__element {
+        padding: 20px;
+    }
+
+    .price__element--best {
+        padding: 30px;
     }
 
     .price__price {
-        font-size: 2rem; /* Ajustar tamaño de fuente para precios */
+        font-size: 2rem;
     }
 
     .price__features {
-        font-size: 1.1rem; /* Ajustar tamaño de fuente para características */
+        font-size: 1.1rem;
     }
 
     .small-text {
-        font-size: 0.8rem; /* Ajustar tamaño de texto pequeño */
+        font-size: 0.8rem;
     }
-}
 
-
-
-
-
-
-    /* Logo configuration */
+    /* Configuración de logo */
     .nav__logo {
-        width: 80px; /* Ajusta este valor para cambiar el tamaño del logo */
-        margin-left: 20px; /* Ajusta el espacio desde la izquierda */
-        margin-top: 10px; /* Espacio desde la parte superior */
-        margin-top: 10px; /* Ajuste para mover hacia abajo */
+        width: 80px;
+        margin-left: 20px;
+        margin-top: 10px;
     }
-/* Ajuste para nav__test */
+
+    /* Ajuste para nav__test */
     .nav__test {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         transition: width 0.3s ease, margin-right 0.3s ease;
-        margin-right: 10px; /* Espacio desde el borde derecho */
+        margin-right: 10px;
     }
 
-    /* Ajuste para la imagen de test */
+    /* Imagen de prueba (test) */
     .test {
-        width: 80px; /* Tamaño reducido para pantallas pequeñas */
+        width: 80px;
         height: auto;
-        margin-left: 20px; /* Espacio desde la izquierda */
-        margin-top: 10px; /* Espacio desde la parte superior */
-        align-self: center; /* Centrado vertical */
-        margin-top: 34px; /* Ajuste para mover hacia abajo */
-
+        margin-left: 20px;
+        margin-top: 34px;
+        align-self: center;
     }
 
     .hero__title {
         font-size: 2.5rem;
     }
 
-
-
-    /* Ajuste para el carrusel en pantallas pequeñas */
-    .hero {
-        background-size: contain; /* Ajuste a contain para que se vea completa en pantallas pequeñas */
-        background-position: center center;
-    }
-
+    /* Ajuste de secciones en pantallas pequeñas */
     .about__main {
         gap: 2em;
     }
@@ -940,9 +881,9 @@ __
     .footer__input {
         flex: 1;
     }
-
-
 }
+
+/* FIN Media Query 800px */
 
 
 
@@ -957,7 +898,7 @@ __
     .nav__logo {
         width: 70px; /* Aumenta el tamaño del logo (ajusta este valor según lo desees) */
         margin-left: 0; /* Mantiene el logo centrado */
-        margin-top: 10px; /* Ajusta este valor para moverlo hacia abajo */
+        margin-top: 1px; /* Ajusta este valor para moverlo hacia abajo */
     }
     
 
