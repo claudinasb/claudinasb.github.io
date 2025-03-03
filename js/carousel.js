@@ -7,15 +7,19 @@ const images = [
     './images/img5.jpg',
     './images/img6.jpg',
     './images/img7.jpg',
-
 ];
 
 let currentIndex = 0;
+
+// Pre-carga de imágenes
+images.forEach(src => {
+    const img = new Image();
+    img.src = src;
+});
 
 function changeBackground() {
     currentIndex = (currentIndex + 1) % images.length;
     hero.style.backgroundImage = `linear-gradient(180deg, var(--color-bg-hero) 0%, var(--color-bg-hero)), url(${images[currentIndex]})`;
 }
 
-// Cambiar imagen cada 5 segundos
-setInterval(changeBackground, 5000);
+setInterval(changeBackground, 7000);
