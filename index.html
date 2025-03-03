@@ -33,7 +33,7 @@
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
                     <a href="https://www.speedtest.net" class="nav__links active" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/test.png" alt="Test de velocidad" class="test">
+                        <img src="./images/test.png" alt="Test de velocidad" class="test">
                     </a>
                 </li>
             </ul> 
@@ -72,6 +72,8 @@
         </section>
     </main>
 
+
+
     <!-- Contact Section with Embedded Form -->
     <section class="contact">
         <div class="container">
@@ -86,50 +88,129 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="price container">
+
+    
+       
+    <!-- Price container -->
+
+
+   <section class="price container">
+    <header>
         <h2 class="subtitle">Obtén el plan perfecto para ti</h2>
         <p class="hero__paragraph">Ofrecemos soluciones de alta tecnología en fibra óptica, junto con soporte especializado y garantía de calidad para tu tranquilidad y comodidad.</p>
-        
-        <div class="price__table">
+    </header>
+    
+    <div class="price__table">
 
-            <!-- Basic Plan -->
-            <div class="price__element">
-                <p class="price__name"><strong>Plan Básico</strong></p>
-                <h3 class="price__price">$55.000/mes</h3>
-                <div class="price__items">
-                    <p class="price__features"><strong>35 MegaS</strong></p>
-                    <p class="price__features">Instalación: $80.000</p>
-                    <p class="price__features small-text">Ideal para el hogar, proporciona una conexión estable para navegación y actividades diarias.</p>
-                </div>
-                <a href="https://wa.link/yuy7w2" class="price__cta" target="_blank" rel="noopener noreferrer">Empieza ahora</a>
-            </div>
+        <!-- Basic Plan -->
+        <div class="price__element">
+            <p class="price__name"><strong>Plan Básico</strong></p>
+            <h3 class="price__price">$55.000/mes</h3>
+            <ul class="price__items">
+                <li class="price__features"><strong>35 Mbps</strong></li>
+                <li class="price__features">Instalación: $80.000</li>
+                <li class="price__features small-text">Ideal para el hogar, proporciona una conexión estable para navegación y actividades diarias.</li>
+            </ul>
+            <a href="https://wa.link/yuy7w2" class="price__cta" target="_blank" rel="noopener noreferrer" aria-label="Empieza ahora con el Plan Básico">Empieza ahora</a>
+        </div>
 
-            <!-- Advanced Plan -->
-            <div class="price__element price__element--best">
-                <p class="price__name"><strong>Plan Avanzado</strong></p>
-                <h3 class="price__price">$80.000/mes</h3>
-                <div class="price__items">
-                    <p class="price__features"><strong>60 MegaS</strong></p>
-                    <p class="price__features">Instalación: $80.000</p>
-                    <p class="price__features small-text">Ideal para hogares con múltiples dispositivos o pequeñas empresas.</p>
-                </div>
-                <a href="https://wa.link/3kn5mq" class="price__cta">Empieza ahora</a>
-            </div>
+        <!-- Advanced Plan -->
+        <div class="price__element price__element--best">
+            <p class="price__name"><strong>Plan Avanzado</strong></p>
+            <h3 class="price__price">$80.000/mes</h3>
+            <ul class="price__items">
+                <li class="price__features"><strong>60 Mbps</strong></li>
+                <li class="price__features">Instalación: $80.000</li>
+                <li class="price__features small-text">Ideal para hogares con múltiples dispositivos o pequeñas empresas.</li>
+            </ul>
+            <a href="https://wa.link/3kn5mq" class="price__cta" target="_blank" rel="noopener noreferrer" aria-label="Empieza ahora con el Plan Avanzado">Empieza ahora</a>
+        </div>
 
-            <!-- Premium Plan -->
-            <div class="price__element">
-                <p class="price__name"><strong>Plan Premium</strong></p>
-                <h3 class="price__price">$110.000/mes</h3>
-                <div class="price__items">
-                    <p class="price__features"><strong>90 MegaS</strong></p>
-                    <p class="price__features">Instalación: $80.000</p>
-                    <p class="price__features small-text">Diseñado para empresas y negocios que requieren alta velocidad y estabilidad.</p>
+        <!-- Premium Plan -->
+        <div class="price__element">
+            <p class="price__name"><strong>Plan Premium</strong></p>
+            <h3 class="price__price">$110.000/mes</h3>
+            <ul class="price__items">
+                <li class="price__features"><strong>90 Mbps</strong></li>
+                <li class="price__features">Instalación: $80.000</li>
+                <li class="price__features small-text">Diseñado para empresas y negocios que requieren alta velocidad y estabilidad.</li>
+            </ul>
+            <a href="https://wa.link/orb1ld" class="price__cta" target="_blank" rel="noopener noreferrer" aria-label="Empieza ahora con el Plan Premium">Empieza ahora</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- testimony Section -->
+
+
+    <section class="testimony">
+        <h2 class="subtitle testimony__title">Conoce nuestro equipo</h2>
+        <div class="testimony__container container">
+            <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+            
+            <section class="testimony__body testimony__body--show" data-id="1">
+                <div class="testimony__text">
+                    <h2 class="subtitle">Técnico de Redes,  <span class="testimony__course">Didier Suarez</span></h2>
+                    <p class="testimony__review">Didier se especializa en la instalación de fibra óptica, antenas y camaras de seguridad, brindando soporte técnico y soluciones efectivas para la integración de sistemas de seguridad.</p> 
+                </div> 
+                <figure class="testimony__picture">
+                    <img src="./images/didier.jpg" class="testimony__img">
+                </figure>
+            </section>
+    
+            <section class="testimony__body" data-id="2">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Ing. de Sistemas,  <span class="testimony__course">Claudina Salas</span></h2>
+                    <p class="testimony__review">Claudina es responsable de soporte y atención al cliente, además de diseñar soluciones tecnológicas y realizar diagnósticos para optimizar nuestros servicios.</p> 
                 </div>
-                <a href="https://wa.link/orb1ld" class="price__cta">Empieza ahora</a>
-            </div>
+                <figure class="testimony__picture">
+                    <img src="./images/claudina.jpg" class="testimony__img">
+                </figure>
+            </section>
+    
+            <section class="testimony__body" data-id="3">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Contador Público,  <span class="testimony__course">Dumar Otalvaro</span></h2>
+                    <p class="testimony__review">Dumar maneja toda la atención al cliente en asuntos financieros, asegurando la transparencia económica y el análisis necesario para respaldar nuestras operaciones.</p> 
+                </div>
+                <figure class="testimony__picture">
+                    <img src="./images/dumar.jpg" class="testimony__img">
+                </figure>
+            </section>
+    
+            <section class="testimony__body" data-id="4">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Técnico de Redes,  <span class="testimony__course">Jonathan Zuñiga</span></h2>
+                    <p class="testimony__review">Jonathan se encarga de la instalación de fibra óptica y cámaras de seguridad, además de ofrecer soporte técnico para garantizar el correcto funcionamiento de nuestros sistemas.</p>
+                </div>
+                <figure class="testimony__picture">
+                    <img src="./images/jonathan.jpg" class="testimony__img">
+                </figure>  
+            </section>
+    
+            <section class="testimony__body" data-id="5">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Técnico de Redes,  <span class="testimony__course">Yurian Alexander</span></h2>
+                    <p class="testimony__review">Yurian se especializa en soporte técnico y reparaciones, asegurando que nuestros clientes siempre tengan la asistencia necesaria para mantener sus servicios activos.</p>
+                </div>
+                <figure class="testimony__picture">
+                    <img src="./images/yurian.jpg" class="testimony__img">
+                </figure>
+            </section>
+    
+            <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
         </div>
     </section>
+
+
+
+
+
+
+
+
 
     <!-- Questions Section -->
     <section class="questions container">
@@ -185,6 +266,10 @@
                     </h3>
                     <p class="questions__show">
                         Puedes solicitar soporte técnico a través de nuestros canales de atención: WhatsApp, nuestra página web o por llamada telefónica.
+                        <br>
+                        Oficina: soportes/pagos/servicios: 322 8545171 - 312 4423164
+                        <br>
+                        Tecnicos: 323 2827834 - 302 6163375 - 322 7329074
                     </p>
                 </div>
             </article>             
@@ -214,6 +299,8 @@
         <img src="./images/pagos.png" alt="Imagen de pagos" class="full-width-image__img">
     </section>
     
+
+
 
     <!-- Sección de Contacto -->
     <section class="contact-section">
@@ -263,7 +350,7 @@
     <section class="container company-values">
         <h2 class="subtitle">¿Quiénes Somos y Qué Representamos?</h2>
         <div class="full-width-image">
-            <img src="/images/nosotros.jpg" alt="Valores de la Empresa" class="full-width-image__img" />
+            <img src="./images/nosotros.jpg" alt="Valores de la Empresa" class="full-width-image__img" />
         </div>
     </section>
 
