@@ -34,33 +34,39 @@ body {
     background-size: cover; /* Mantiene la proporción y cubre el contenedor */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    animation: fade 20s infinite; /* Animación para el fondo */
+    animation: fade 28s infinite; /* Animación para el fondo */
 }
 
 
-
 /* CARRUSEL DE IMAGENES INICIO */
-/* Definimos las imágenes en una animación */
+
 @keyframes fade {
     0% {
         background-image: linear-gradient(180deg, var(--color-bg-hero) 0%, var(--color-bg-hero)), url("../images/img1.jpg");
     }
-    20% {
+    14.28% {
         background-image: linear-gradient(180deg, var(--color-bg-hero) 0%, var(--color-bg-hero)), url("../images/img2.jpg");
     }
-    40% {
+    28.56% {
         background-image: linear-gradient(180deg, var(--color-bg-hero) 0%, var(--color-bg-hero)), url("../images/img3.jpg");
     }
-    60% {
+    42.84% {
         background-image: linear-gradient(180deg, var(--color-bg-hero) 0%, var(--color-bg-hero)), url("../images/img4.jpg");
     }
-    80% {
+    57.12% {
         background-image: linear-gradient(180deg, var(--color-bg-hero) 0%, var(--color-bg-hero)), url("../images/img5.jpg");
+    }
+    71.4% {
+        background-image: linear-gradient(180deg, var(--color-bg-hero) 0%, var(--color-bg-hero)), url("../images/img6.jpg");
+    }
+    85.68% {
+        background-image: linear-gradient(180deg, var(--color-bg-hero) 0%, var(--color-bg-hero)), url("../images/img7.jpg");
     }
     100% {
         background-image: linear-gradient(180deg, var(--color-bg-hero) 0%, var(--color-bg-hero)), url("../images/img1.jpg");
     }
 }
+
 
 /* TERMINACION DE CARRUSEL */
 
@@ -235,7 +241,7 @@ body {
     --bg-cta: #fff;
     --color-cta: #546bd4;
     --color-items: #ffffff;
-    background-image: url('/images/basico.jpg'); /* Imagen de fondo para el plan básico */
+    background-image: url('../images/basico.jpg'); /* Imagen de fondo para el plan básico */
     background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
     background-position: center; /* Centrar la imagen */
 }
@@ -279,7 +285,9 @@ body {
     font-size: 1.3rem; /* Tamaño base */
     margin-bottom: 50px;
     color: var(--color-items);
+    list-style-type: none; /* Elimina los puntos de la lista */
 }
+
 
 .price__features {
     font-weight: normal; /* Cambia el peso de la fuente si es necesario */
